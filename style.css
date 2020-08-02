@@ -1,0 +1,20 @@
+html, body {
+  background-color: #241734;
+}
+.nerdy-pen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  height: 100vh;
+}
+.nerdy-pen__text {
+	background: linear-gradient(to right, #2e2157 0%, #d40078 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	color: #fff;
+	font-family: 'Roboto', sans-serif;
+	padding: 1em 2em;
+	text-align: center;
+	font-size: 3.5em;
+}
