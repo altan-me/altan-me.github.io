@@ -1,20 +1,79 @@
-html, body {
-  background-color: #241734;
+:root {
+  --accent: #c147a3;
+  --light: #ccd6f6;
+  --dark: #6e6e6e;
+  --font: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
 }
-.nerdy-pen {
+html,
+body {
+  background-color: #0a192f;
+}
+.container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-content: center;
+  /* height: 100vh; */
   height: 98vh;
+  margin-left: 1em;
 }
-.nerdy-pen__text {
-	background: linear-gradient(to right, #2e2157 0%, #d40078 100%);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-	color: #fff;
-	font-family: 'Roboto', sans-serif;
-	padding: 1em 2em;
-	text-align: center;
-	font-size: 3.5em;
+.greeting {
+  margin: 0px 0px 30px 4px;
+  color: var(--accent);
+  font-family: var(--font);
+  font-size: 1.5em;
+  font-weight: 400;
+}
+.big-text {
+  font-family: "Roboto", sans-serif;
+  color: var(--light);
+  margin: 0px;
+  padding-bottom: 15px;
+  font-size: 5em;
+  /* font-size: clamp(40px, 8vw, 80px); */
+}
+.about {
+  padding-top: 2em;
+  width: 65em;
+  margin: 0px 0px 30px 4px;
+  color: var(--dark);
+  font-family: var(--font);
+  font-size: 1em;
+  font-weight: 400;
+}
+.email-link {
+  color: var(--accent);
+  background-color: transparent;
+  border: 1px solid var(--accent);
+  border-radius: 4px;
+  padding: 1.25rem 1.75rem;
+  font-family: var(--font);
+  line-height: 1;
+  text-decoration: none;
+  cursor: pointer;
+  width: 6em;
+  margin-top: 2em;
+}
+.email-link:hover {
+  transition: background 0.4s ease-in-out;
+  color: var(--accent);
+  background-color: rgb(193, 71, 163, 0.2);
+}
+
+/* Better Mobile Sizing */
+@media (max-width: 1000px) {
+  .greeting {
+    font-size: 4em;
+  }
+  .big-text {
+    font-size: 10em;
+  }
+  .about {
+    font-size: 2em;
+    width: auto;
+  }
+  .email-link {
+    font-size: 3em;
+    padding: 3rem;
+  }
 }
