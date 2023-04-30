@@ -1,8 +1,10 @@
 :root {
-  --accent: #c147a3;
-  --light: #ccd6f6;
-  --dark: #6e6e6e;
-  --background: #121722;
+  --accent: #64ed68;
+  --light: #fff;
+  /* --dark: #6e6e6e; */
+  --dark: #fff;
+  /* --background: #121722; */
+  --background: #121212;
   --font: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
 }
 html,
@@ -76,7 +78,7 @@ body {
   display: inline-block;
   margin: 0;
   margin-bottom: 1em;
-  padding: 0.55em 1rem;
+  padding: 0.75em 1.5rem;
   border: 0;
   border-radius: 0.117rem;
   background-color: #aeb5bb;
@@ -94,7 +96,7 @@ body {
 }
 .butt:hover {
   opacity: 0.9;
-  color: var(--light);
+  /* color: var(--light); */
   background-color: var(--accent);
 }
 /* Better Mobile Sizing */
@@ -110,6 +112,9 @@ body {
   }
   .big-text {
     font-size: 10em;
+  }
+  .butt {
+    font-size: 2.2rem;
   }
   .about {
     font-size: 2em;
