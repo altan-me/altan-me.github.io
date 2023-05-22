@@ -19,7 +19,6 @@ body {
   flex-direction: column;
   justify-content: center;
   align-content: center;
-  /* height: 98vh; */
   margin-left: 10em;
   width: 70%;
 }
