@@ -98,6 +98,7 @@ body {
   }
   .butt {
     font-size: 18px;
+    max-width: 400px;
   }
   .about {
     font-size: 16px;
