@@ -1,9 +1,7 @@
 :root {
   --accent: #64ed68;
   --light: #fff;
-  /* --dark: #6e6e6e; */
   --dark: #fff;
-  /* --background: #121722; */
   --background: #121212;
   --font: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
 }
@@ -20,10 +18,9 @@ body {
   justify-content: center;
   align-content: center;
   margin-left: 10em;
-  width: 70%;
+  max-width: 600px;
 }
 .greeting {
-  margin: 0px 0px 30px 4px;
   color: var(--accent);
   font-family: var(--font);
   font-size: 1.5em;
@@ -33,7 +30,6 @@ body {
   font-family: var(--font);
   color: var(--light);
   margin: 0px;
-  padding-bottom: 15px;
   font-size: 5em;
 }
 .about {
@@ -46,14 +42,14 @@ body {
   font-weight: 400;
 }
 .logo {
-  width: 300px;
-  height: 300px;
+  width: 220px;
+  height: 220px;
   overflow: hidden;
 }
 .logo img {
-  width: 300px;
-  height: 300px;
-  margin: 0px 0px 0px -50px;
+  width: 220px;
+  height: 220px;
+  margin: 0px 0px 0px -30px;
 }
 .butt {
   display: inline-block;
@@ -77,32 +73,11 @@ body {
 }
 .butt:hover {
   opacity: 0.9;
-  /* color: var(--light); */
   background-color: var(--accent);
 }
 /* Better Mobile Sizing */
 @media (max-width: 1000px) {
   .container {
-    width: 80%;
-    margin-top: 100px;
     margin-left: 1em;
-  }
-  .logo {
-    display: none;
-  }
-  .greeting {
-    margin-top: 20px;
-    font-size: 40px;
-  }
-  .big-text {
-    font-size: 140px;
-  }
-  .butt {
-    font-size: 18px;
-    max-width: 400px;
-  }
-  .about {
-    font-size: 16px;
-    width: auto;
   }
 }
