@@ -79,5 +79,10 @@ body {
 @media (max-width: 1000px) {
   .container {
     margin-left: 1em;
+    margin-right: 1em;
+    max-width: 900px;
+  }
+  .about {
+    max-width: 40em;
   }
 }
